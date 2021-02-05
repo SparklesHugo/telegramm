@@ -75,12 +75,12 @@ def send_welcome(message): #в функцию мы передаём команд
 @bot.message_handler(commands=['admins'])
 def print_sudo(message):
     bot.reply_to(message, 'Список администраторов:')
-    bot.send_message(message.chat.id, '463523090')
+    bot.send_message(message.chat.id, '354912304')
 
 @bot.message_handler(commands=['edit'])
 def send_welcome(message):
     print(message.chat.id)
-    if message.chat.id == 463523090:
+    if message.chat.id == 354912304:
         markup = telebot.types.ReplyKeyboardMarkup(row_width=1, one_time_keyboard=True)#инициализируем кнопки
         itembtn1 = telebot.types.KeyboardButton('Добавить')
         itembtn2 = telebot.types.KeyboardButton('Удалить')
